@@ -1,0 +1,134 @@
+body {
+  background-color: #021526;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 98vh;
+  flex-direction: column;
+}
+h1 {
+  /* margin-bottom: 100px; */
+  /* font-size: 30px; */
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#container {
+  border-radius: 8px;
+  background-color: #03346e;
+  padding-top: 10px;
+  height: 35rem;
+  /* border: 2px solid white; */
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#screen {
+  /* border: 2px solid white; */
+  background-color: #000000;
+  border-radius: 7px;
+  width: 90%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+#content {
+  width: 95%;
+  height: 80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: xx-large;
+  word-wrap: break-word;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+#buttons {
+  width: 90%;
+  height: 70%;
+  margin-top: 16px;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 5px;
+}
+.eachButton {
+  cursor: default;
+  background-color: #6eacda;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e2e2b6;
+  font-size: large;
+}
+.eachButton:active {
+  background-color: #87bae0;
+  transition: background-color 0.3s ease-out;
+}
+
+@media (min-width: 540px) {
+  #container {
+    border-radius: 8px;
+    /* padding: 0; */
+    height: 30rem;
+    /* border: 2px solid white; */
+    width: 80%;
+  }
+  #screen {
+    /* border: 2px solid white; */
+    width: 90%;
+    height: 20%;
+  }
+}
+@media (min-width: 940px) {
+  #container {
+    border-radius: 8px;
+    height: 30rem;
+    /* border: 2px solid white; */
+    width: 60%;
+    flex-direction: row;
+    padding: 16px;
+  }
+  #screen {
+    /* border: 2px solid white; */
+    width: 40%;
+    height: 90%;
+    margin-right: 10px;
+  }
+  #buttons {
+    /* border: 2px solid white; */
+    width: 60%;
+    height: 90%;
+    margin-bottom: 16px;
+  }
+  #content {
+    width: 90%;
+    height: 95%;
+  }
+}
+header #icon,
+#link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  /* text-decoration: none; */
+  color: #ffffff;
+  font-family: "Optima", monospace;
+  font-optical-sizing: auto;
+  font-weight: 20x;
+  font-size: larger;
+  font-style: normal;
+  padding: 10px;
+}
